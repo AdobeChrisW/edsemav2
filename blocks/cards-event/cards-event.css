@@ -1,0 +1,111 @@
+/* Block: cards-event -- event cards with image left, date + title + link right */
+
+.cards-event > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.cards-event > ul > li {
+  border: 1px solid rgb(234 234 234);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cards-event .cards-event-card-image {
+  line-height: 0;
+}
+
+.cards-event > ul > li img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cards-event .cards-event-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Date display */
+.cards-event .cards-event-date {
+  margin-bottom: 16px;
+}
+
+.cards-event .cards-event-day {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+}
+
+.cards-event .cards-event-month {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--text-color);
+}
+
+/* Title */
+.cards-event h3 {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: var(--body-font-family);
+  line-height: 26.6px;
+  color: var(--text-color);
+  margin: 0 0 16px;
+}
+
+/* Read more link */
+.cards-event a:any-link {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.cards-event a:hover {
+  color: var(--link-color);
+}
+
+/* Paragraph reset */
+.cards-event p {
+  margin: 0;
+}
+
+/* Desktop: two cards side by side, horizontal layout within each card */
+@media (width >= 900px) {
+  .cards-event > ul {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .cards-event > ul > li {
+    flex-direction: row;
+  }
+
+  .cards-event .cards-event-card-image {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+
+  .cards-event > ul > li img {
+    height: 100%;
+    min-height: 238px;
+  }
+
+  .cards-event .cards-event-card-body {
+    flex: 1;
+    padding: 24px;
+  }
+}

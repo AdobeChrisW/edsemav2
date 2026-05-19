@@ -1,0 +1,83 @@
+/* Block: cards-promo -- Dark navy promotional tiles */
+
+.cards-promo > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.cards-promo > ul > li {
+  background-color: var(--text-color);
+  color: #fff;
+  padding: 30px;
+  box-shadow: rgb(0 0 0 / 55%) 4px 6px 8px -4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-promo .cards-promo-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cards-promo .cards-promo-card-body h2 {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: var(--heading-font-family);
+  line-height: 31px;
+  color: #fff;
+  margin: 0 0 15px;
+}
+
+.cards-promo .cards-promo-card-body p {
+  font-size: 16px;
+  font-family: var(--body-font-family);
+  line-height: 24px;
+  color: #fff;
+  margin: 0 0 16px;
+}
+
+.cards-promo .cards-promo-card-body p:last-child {
+  margin-top: auto;
+}
+
+/* Reset EDS button styling - links should appear as plain underlined text */
+.cards-promo .cards-promo-card-body .button-container {
+  display: inline;
+  margin-top: auto;
+}
+
+.cards-promo .cards-promo-card-body a.button:any-link,
+.cards-promo .cards-promo-card-body a:any-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--body-font-family);
+  text-decoration: underline;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  white-space: normal;
+}
+
+.cards-promo .cards-promo-card-body a:hover {
+  color: #fff;
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+@media (width >= 900px) {
+  .cards-promo > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-promo > ul > li {
+    min-height: 175px;
+  }
+}

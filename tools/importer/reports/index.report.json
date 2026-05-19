@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.nottingham.ac.uk/",
+  "path": "index",
+  "timestamp": "2026-05-19T10:21:14.502Z",
+  "title": "University of Nottingham",
+  "template": "homepage",
+  "blocks": [
+    "hero-homepage",
+    "search-course",
+    "cards-promo",
+    "cards-stats",
+    "columns-feature",
+    "cards-image-cta",
+    "carousel-news",
+    "cards-event",
+    "columns-logos"
+  ]
+}

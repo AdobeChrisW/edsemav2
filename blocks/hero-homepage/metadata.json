@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-homepage",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-05-19T10:07:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nottingham.ac.uk/",
+    "originPage": "University of Nottingham homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "homepage-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph + 1 CTA",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "university homepage",
+      "landing pages with full-width background images",
+      "campaign pages with prominent CTA"
+    ],
+    "notSuitableFor": [
+      "text-only pages without hero images",
+      "interior content pages",
+      "pages with multiple CTAs in hero"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-19T10:07:00.000Z"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "variantName": "search-course",
+  "baseBlock": "search",
+  "version": "1.0.0",
+  "created": "2026-05-19T10:07:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nottingham.ac.uk/",
+    "originPage": "University of Nottingham homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "course-finder",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading + search input + dropdown + button",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "course finder pages",
+      "search-focused landing pages",
+      "pages with prominent search functionality"
+    ],
+    "notSuitableFor": [
+      "simple content pages",
+      "pages with no search requirement",
+      "pages where search is in header only"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-19T10:07:00.000Z"
+  }
+}

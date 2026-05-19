@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-logos",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-19T10:07:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nottingham.ac.uk/",
+    "originPage": "University of Nottingham homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "minimal",
+    "purpose": "partner-logos",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "logo image | logo image | logo image | logo image",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "partner logo rows",
+      "accreditation badge displays",
+      "client or sponsor logo grids"
+    ],
+    "notSuitableFor": [
+      "text-heavy column layouts",
+      "layouts with mixed text and images",
+      "content that needs more than image display"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-19T10:07:00.000Z"
+  }
+}

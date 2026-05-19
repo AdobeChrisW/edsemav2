@@ -1,0 +1,19 @@
+:root {
+  --heading-font-family: "Lora", georgia, serif;
+  --body-font-family: "Circular", arial, sans-serif;
+  --background-color: #fff;
+  --text-color: #10263b;
+  --link-color: #0d6efd;
+  --link-hover-color: #0a58ca;
+  --light-color: #f4f4f4;
+  --dark-color: #1a1c28;
+  --section-padding: 48px;
+  --nav-height: 72px;
+  --content-max-width: 1200px;
+  --heading-size-xxl: 34px;
+  --heading-size-xl: 28px;
+  --heading-size-l: 28px;
+  --heading-size-m: 20px;
+  --heading-size-s: 18px;
+  --heading-size-xs: 16px;
+}

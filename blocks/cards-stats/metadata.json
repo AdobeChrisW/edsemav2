@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-stats",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-19T10:07:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nottingham.ac.uk/",
+    "originPage": "University of Nottingham homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "colored",
+    "density": "wide",
+    "purpose": "statistics",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + large heading number + description + source link",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "university ranking statistics",
+      "key metrics display",
+      "achievement highlights with numbers"
+    ],
+    "notSuitableFor": [
+      "text-heavy content cards",
+      "product listings",
+      "cards without prominent statistics"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-19T10:07:00.000Z"
+  }
+}

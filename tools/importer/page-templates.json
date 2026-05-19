@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "projectType": "doc"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.nottingham.ac.uk/"
+      ],
+      "description": "University of Nottingham homepage with hero, featured content, and navigation to key areas",
+      "blocks": [
+        {
+          "name": "hero-homepage",
+          "instances": [
+            ".homepage-hero-banner"
+          ]
+        },
+        {
+          "name": "search-course",
+          "instances": [
+            ".search-section"
+          ]
+        },
+        {
+          "name": "cards-promo",
+          "instances": [
+            ".homepage-campaign-tiles"
+          ]
+        },
+        {
+          "name": "cards-stats",
+          "instances": [
+            ".homepage-rankings"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            ".homepage-image-cta-block"
+          ]
+        },
+        {
+          "name": "cards-image-cta",
+          "instances": [
+            ".homepage-image-cta-row"
+          ]
+        },
+        {
+          "name": "carousel-news",
+          "instances": [
+            ".news-carousel"
+          ]
+        },
+        {
+          "name": "cards-event",
+          "instances": [
+            ".events-section .row.g-4"
+          ]
+        },
+        {
+          "name": "columns-logos",
+          "instances": [
+            ".homepage-partnerships"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero",
+          "name": "Hero Section",
+          "selector": ".homepage-hero-banner",
+          "style": null,
+          "blocks": [
+            "hero-homepage"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-search",
+          "name": "Course Search Section",
+          "selector": ".search-section",
+          "style": null,
+          "blocks": [
+            "search-course"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3-campaign",
+          "name": "Campaign Tiles Section",
+          "selector": ".homepage-campaign-tiles",
+          "style": null,
+          "blocks": [
+            "cards-promo"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4-rankings",
+          "name": "Rankings Section",
+          "selector": ".homepage-rankings",
+          "style": null,
+          "blocks": [
+            "cards-stats"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5-research",
+          "name": "Research Section",
+          "selector": ".homepage-bg-container",
+          "style": "grey",
+          "blocks": [
+            "columns-feature",
+            "cards-image-cta"
+          ],
+          "defaultContent": [
+            ".homepage-bg-container > .container > h2"
+          ]
+        },
+        {
+          "id": "section-6-news",
+          "name": "News Section",
+          "selector": ".news-section",
+          "style": null,
+          "blocks": [
+            "carousel-news"
+          ],
+          "defaultContent": [
+            ".news-section .news-events-title",
+            ".news-section .news-events-all-link"
+          ]
+        },
+        {
+          "id": "section-7-events",
+          "name": "Events Section",
+          "selector": ".events-section",
+          "style": null,
+          "blocks": [
+            "cards-event"
+          ],
+          "defaultContent": [
+            ".events-section .news-events-title",
+            ".events-section .news-events-all-link"
+          ]
+        },
+        {
+          "id": "section-8-partnerships",
+          "name": "Partnerships Section",
+          "selector": ".homepage-partnerships",
+          "style": "dark",
+          "blocks": [
+            "columns-logos"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

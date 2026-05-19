@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-event",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-05-19T10:07:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nottingham.ac.uk/",
+    "originPage": "University of Nottingham homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "event-listing",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + date + heading + read more link",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "event listings with dates",
+      "upcoming events sections",
+      "time-sensitive content cards"
+    ],
+    "notSuitableFor": [
+      "cards without dates",
+      "product or feature cards",
+      "text-only promotional content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-19T10:07:00.000Z"
+  }
+}

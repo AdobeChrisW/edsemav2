@@ -1,0 +1,149 @@
+/* Block: search-course -- Course finder form */
+
+/* Extracted values from source: nottingham.ac.uk .search-section */
+
+.search-course {
+  color: var(--text-color);
+  position: relative;
+  z-index: 10;
+  padding: 20px 0;
+}
+
+.search-course h2.search-course-title {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: var(--heading-font-family);
+  line-height: 30px;
+  color: var(--text-color);
+  margin: 0 0 8px;
+}
+
+/* Form layout: stacks on mobile, row on desktop */
+.search-course .search-course-form {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Field wrappers */
+.search-course .search-course-field {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+/* Text input */
+.search-course input[type="search"] {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  font-family: var(--body-font-family);
+  color: rgb(0 0 0);
+  background-color: rgb(255 255 255);
+  border: none;
+  border-bottom: 1px solid rgb(140 136 135);
+  border-radius: 0;
+  padding: 10px 5px;
+  height: 47px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.search-course input[type="search"]:focus {
+  border-bottom-color: var(--text-color);
+}
+
+.search-course input[type="search"]::placeholder {
+  color: rgb(140 136 135);
+}
+
+/* Select dropdown */
+.search-course select {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  font-family: var(--body-font-family);
+  color: rgb(64 81 98);
+  background-color: rgb(255 255 255);
+  border: none;
+  border-bottom: 1px solid rgb(140 136 135);
+  border-radius: 0;
+  padding: 10px 0;
+  height: 47px;
+  outline: none;
+  appearance: auto;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.search-course select:focus {
+  border-bottom-color: var(--text-color);
+}
+
+/* Submit button */
+.search-course button[type="submit"] {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--text-color);
+  color: rgb(255 255 255);
+  padding: 10px 14px;
+  border: 2px solid var(--text-color);
+  border-radius: 68px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--body-font-family);
+  line-height: 24px;
+  height: 48px;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.search-course button[type="submit"]:hover,
+.search-course button[type="submit"]:focus-visible {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+
+.search-course .search-course-btn-text {
+  flex: 1;
+}
+
+.search-course .search-course-btn-arrow {
+  font-size: 24px;
+  line-height: 1;
+  margin-left: 8px;
+}
+
+/* Desktop layout: horizontal row */
+@media (width >= 900px) {
+  .search-course .search-course-form {
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    gap: 0;
+  }
+
+  .search-course .search-course-keyword {
+    flex: 5;
+    padding: 0 12px;
+  }
+
+  .search-course .search-course-level {
+    flex: 4;
+    padding: 0 12px;
+  }
+
+  .search-course .search-course-submit {
+    flex: 3;
+    padding: 0 12px;
+  }
+
+  .search-course button[type="submit"] {
+    width: auto;
+    min-width: 160px;
+    padding: 10px 60px 10px 14px;
+  }
+}
