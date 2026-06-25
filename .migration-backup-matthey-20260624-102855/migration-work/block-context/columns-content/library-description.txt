@@ -1,0 +1,1 @@
+Base block type: columns. Variant: columns-content.

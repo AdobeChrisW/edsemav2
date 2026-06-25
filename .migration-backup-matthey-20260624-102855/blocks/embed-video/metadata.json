@@ -1,0 +1,39 @@
+{
+  "variantName": "embed-video",
+  "baseBlock": "embed",
+  "version": "1.0.0",
+  "created": "2026-05-21T14:32:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://matthey.com/future-pgms-partnership",
+    "originPage": "PGM partnership landing page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "standard",
+    "purpose": "video-embed",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "poster image + YouTube URL",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "pages with YouTube video embeds",
+      "landing pages with featured video content",
+      "marketing pages with video presentations"
+    ],
+    "notSuitableFor": [
+      "social media embeds (Twitter/X)",
+      "pages requiring multiple video galleries",
+      "audio-only content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/future-pgms-partnership"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-21T14:32:00.000Z"
+  }
+}

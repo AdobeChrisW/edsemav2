@@ -1,0 +1,100 @@
+/* Block: columns-banner -- promotional banner with dark slate gradient.
+   Values extracted from source computed styles (.global-packages-banner). */
+
+.columns-banner {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  padding: 32px;
+  background-image: var(--banner-gradient);
+  color: #fff;
+}
+
+/* Subtle islamic geometric pattern overlay from source */
+.columns-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://hajj.nusuk.sa/assets/img/islamic_pattern.png");
+  background-repeat: repeat;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/* Row: stack text block above the CTA */
+.columns-banner > div {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.columns-banner > div > div {
+  margin: 0;
+}
+
+.columns-banner h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.27;
+}
+
+.columns-banner p {
+  margin: 8px 0 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* CTA: light/neutral on-color button (overrides global migrated-link reset) */
+.columns-banner > div > div:last-child p {
+  margin: 0;
+}
+
+.columns-banner a:any-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: var(--text-color);
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.columns-banner a:any-link::after {
+  content: "\2192"; /* right arrow */
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.columns-banner a:hover,
+.columns-banner a:focus-visible {
+  background-color: #f9fafb;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .columns-banner {
+    padding: 40px;
+  }
+
+  .columns-banner h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+}

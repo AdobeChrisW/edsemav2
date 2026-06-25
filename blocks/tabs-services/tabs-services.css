@@ -1,0 +1,165 @@
+/* ===== Tab strip ===== */
+.tabs-services .tabs-services-list {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0;
+  position: relative;
+  margin: 24px 0 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* full-width light-grey line under the whole tab strip */
+.tabs-services .tabs-services-list::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: var(--border-color);
+}
+
+/* ===== Tabs ===== */
+.tabs-services .tabs-services-list button {
+  flex: 0 0 max-content;
+  position: relative;
+  margin: 0;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  border-radius: 6px 6px 0 0;
+  padding: 16px;
+  background-color: transparent;
+  color: var(--slate-color);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+/* active tab: green underline sitting on top of the grey line */
+.tabs-services .tabs-services-list button[aria-selected='true'] {
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
+}
+
+.tabs-services .tabs-services-list button[aria-selected='true']::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 3px;
+  background-color: var(--brand-primary);
+  z-index: 1;
+}
+
+/* ===== Panels ===== */
+.tabs-services .tabs-services-panel {
+  margin-top: 20px;
+  padding: 12px;
+}
+
+.tabs-services .tabs-services-panel[aria-hidden='true'] {
+  display: none;
+}
+
+.tabs-services .tabs-services-panel h4 {
+  margin: 0 0 8px;
+  color: var(--text-color);
+  font-size: var(--heading-size-m);
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.tabs-services .tabs-services-panel p {
+  margin: 16px 0 0;
+  color: var(--text-color);
+  font-size: var(--body-font-size-m);
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* tab label paragraph reset (kept after panel p for specificity ordering) */
+.tabs-services .tabs-services-list button p {
+  margin: 0;
+}
+
+/* ===== Feature label grid (panel 1) =====
+   The first panel directly follows the tablist; its content div lays out
+   the h4 + intro paragraph full-width, with the 7 label p's in a grid. */
+.tabs-services .tabs-services-list + .tabs-services-panel > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  align-items: stretch;
+  margin-top: 8px;
+}
+
+.tabs-services .tabs-services-list + .tabs-services-panel > div > h4,
+.tabs-services .tabs-services-list + .tabs-services-panel > div > p:first-of-type {
+  grid-column: 1 / -1;
+}
+
+/* the feature label cards (every p after the intro paragraph) */
+.tabs-services .tabs-services-list + .tabs-services-panel > div > p:nth-of-type(n + 2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin: 0;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--background-color);
+  text-align: center;
+  font-size: var(--heading-size-s);
+  line-height: 30px;
+}
+
+/* decorative circular featured-icon placeholder above each label */
+.tabs-services .tabs-services-list + .tabs-services-panel > div > p:nth-of-type(n + 2)::before {
+  content: '';
+  display: inline-block;
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--brand-primary);
+  border-radius: 9999px;
+  background-color: rgb(27 131 84 / 8%);
+}
+
+/* when an icon is injected, the icon becomes the circular badge; hide placeholder */
+.tabs-services .tabs-services-list + .tabs-services-panel > div > p.tabs-services-feature::before {
+  display: none;
+}
+
+.tabs-services .tabs-services-feature-icon {
+  box-sizing: border-box;
+  width: 52px;
+  height: 52px;
+  padding: 13px;
+  border-radius: 9999px;
+  background-color: rgb(27 131 84 / 8%);
+
+  /* tint the stroke SVG icon to the brand green */
+  filter: invert(34%) sepia(64%) saturate(420%) hue-rotate(102deg) brightness(92%) contrast(90%);
+}
+
+@media (width >= 600px) {
+  .tabs-services .tabs-services-list + .tabs-services-panel > div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .tabs-services .tabs-services-list + .tabs-services-panel > div {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}

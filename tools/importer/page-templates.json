@@ -1,159 +1,98 @@
 {
   "metadata": {
-    "projectType": "doc"
+    "projectType": "da"
   },
   "templates": [
     {
-      "name": "homepage",
+      "name": "hajj-homepage",
       "urls": [
-        "https://www.nottingham.ac.uk/"
+        "https://hajj.nusuk.sa"
       ],
-      "description": "University of Nottingham homepage with hero, featured content, and navigation to key areas",
+      "representativeUrl": "https://hajj.nusuk.sa",
+      "coverageGaps": [],
+      "description": "Nusuk Hajj platform homepage: hero with background video and CTAs, global packages banner, services tabs, 'Hajj in a Glimpse' video carousel, 10-steps registration grid, FAQ accordion, and footer.",
       "blocks": [
         {
-          "name": "hero-homepage",
-          "instances": [
-            ".homepage-hero-banner"
-          ]
+          "name": "hero-video",
+          "instances": ["#main-content > section.dga-hero-section"]
         },
         {
-          "name": "search-course",
-          "instances": [
-            ".search-section"
-          ]
+          "name": "columns-banner",
+          "instances": [".global-packages-banner"],
+          "section": "white"
         },
         {
-          "name": "cards-promo",
-          "instances": [
-            ".homepage-campaign-tiles"
-          ]
+          "name": "tabs-services",
+          "instances": ["#nav-tabContent"],
+          "section": "light-grey"
         },
         {
-          "name": "cards-stats",
-          "instances": [
-            ".homepage-rankings"
-          ]
+          "name": "carousel-video",
+          "instances": ["#embla-carousel"]
         },
         {
-          "name": "columns-feature",
-          "instances": [
-            ".homepage-image-cta-block"
-          ]
+          "name": "cards-steps",
+          "instances": ["#hajj-steps div.d-flex.flex-wrap.align-items-start"]
         },
         {
-          "name": "cards-image-cta",
-          "instances": [
-            ".homepage-image-cta-row"
-          ]
-        },
-        {
-          "name": "carousel-news",
-          "instances": [
-            ".news-carousel"
-          ]
-        },
-        {
-          "name": "cards-event",
-          "instances": [
-            ".events-section .row.g-4"
-          ]
-        },
-        {
-          "name": "columns-logos",
-          "instances": [
-            ".homepage-partnerships"
-          ]
+          "name": "accordion-faq",
+          "instances": ["#accordionFaq"]
         }
       ],
       "sections": [
         {
-          "id": "section-1-hero",
-          "name": "Hero Section",
-          "selector": ".homepage-hero-banner",
+          "id": "rc3",
+          "name": "Hero",
+          "selector": "#main-content > section.dga-hero-section",
           "style": null,
-          "blocks": [
-            "hero-homepage"
-          ],
+          "blocks": ["hero-video"],
           "defaultContent": []
         },
         {
-          "id": "section-2-search",
-          "name": "Course Search Section",
-          "selector": ".search-section",
+          "id": "rc4",
+          "name": "Global Packages Banner",
+          "selector": "#main-content > section.dga-py-8xl:nth-of-type(2)",
           "style": null,
-          "blocks": [
-            "search-course"
-          ],
+          "blocks": ["columns-banner"],
           "defaultContent": []
         },
         {
-          "id": "section-3-campaign",
-          "name": "Campaign Tiles Section",
-          "selector": ".homepage-campaign-tiles",
-          "style": null,
-          "blocks": [
-            "cards-promo"
-          ],
-          "defaultContent": []
-        },
-        {
-          "id": "section-4-rankings",
-          "name": "Rankings Section",
-          "selector": ".homepage-rankings",
-          "style": null,
-          "blocks": [
-            "cards-stats"
-          ],
-          "defaultContent": []
-        },
-        {
-          "id": "section-5-research",
-          "name": "Research Section",
-          "selector": ".homepage-bg-container",
-          "style": "grey",
-          "blocks": [
-            "columns-feature",
-            "cards-image-cta"
-          ],
+          "id": "rc5",
+          "name": "Services",
+          "selector": "#main-content > section.dga-py-5xl.dga-bg-neutral-50",
+          "style": "light-grey",
+          "blocks": ["tabs-services"],
           "defaultContent": [
-            ".homepage-bg-container > .container > h2"
+            "#main-content > section.dga-py-5xl.dga-bg-neutral-50 h3",
+            "#main-content > section.dga-py-5xl.dga-bg-neutral-50 > div > div.d-flex a"
           ]
         },
         {
-          "id": "section-6-news",
-          "name": "News Section",
-          "selector": ".news-section",
+          "id": "rc6",
+          "name": "Hajj In A Glimpse",
+          "selector": "#hajjInAGlimpse",
           "style": null,
-          "blocks": [
-            "carousel-news"
-          ],
-          "defaultContent": [
-            ".news-section .news-events-title",
-            ".news-section .news-events-all-link"
-          ]
+          "blocks": ["carousel-video"],
+          "defaultContent": ["#hajjInAGlimpse h3"]
         },
         {
-          "id": "section-7-events",
-          "name": "Events Section",
-          "selector": ".events-section",
+          "id": "rc7",
+          "name": "10 Steps",
+          "selector": "#hajj-steps",
           "style": null,
-          "blocks": [
-            "cards-event"
-          ],
-          "defaultContent": [
-            ".events-section .news-events-title",
-            ".events-section .news-events-all-link"
-          ]
+          "blocks": ["cards-steps"],
+          "defaultContent": ["#hajj-steps h3", "#hajj-steps p"]
         },
         {
-          "id": "section-8-partnerships",
-          "name": "Partnerships Section",
-          "selector": ".homepage-partnerships",
-          "style": "dark",
-          "blocks": [
-            "columns-logos"
-          ],
-          "defaultContent": []
+          "id": "rc8",
+          "name": "FAQ",
+          "selector": "#home-faq",
+          "style": null,
+          "blocks": ["accordion-faq"],
+          "defaultContent": [
+            "#home-faq h3",
+            "#home-faq > div > div.d-flex a"
+          ]
         }
       ]
     }

@@ -1,0 +1,88 @@
+.cards-steps > ul {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.cards-steps > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 140px;
+  min-width: 140px;
+  max-width: 220px;
+  padding: 16px;
+  text-align: center;
+}
+
+/* decorative circular icon placeholder above each number */
+.cards-steps > ul > li::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 24px;
+  border-radius: 9999px;
+  background-color: #f3fcf6;
+}
+
+.cards-steps .cards-steps-card-body {
+  margin: 0;
+  display: block;
+}
+
+.cards-steps .cards-steps-card-body :is(h1, h2, h3, h4, h5, h6) {
+  margin: 0 0 8px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+  color: var(--brand-primary-dark);
+}
+
+.cards-steps .cards-steps-card-body p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+/* when an image cell is authored, render it as the circular icon
+   and suppress the decorative placeholder */
+.cards-steps > ul > li:has(.cards-steps-card-image)::before {
+  display: none;
+}
+
+.cards-steps .cards-steps-card-image {
+  line-height: 0;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #f3fcf6;
+}
+
+.cards-steps .cards-steps-card-image img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+
+  /* tint the stroke SVG icons to the brand green */
+  filter: invert(34%) sepia(64%) saturate(420%) hue-rotate(102deg) brightness(92%) contrast(90%);
+}
+
+@media (width >= 900px) {
+  .cards-steps > ul > li {
+    flex-basis: 200px;
+  }
+}

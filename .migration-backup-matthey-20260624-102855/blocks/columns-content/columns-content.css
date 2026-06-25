@@ -1,0 +1,89 @@
+/* columns-content block
+ * 2-column layout: text + image (or image + text)
+ * Used in white, dark (#1d243c), and blue (#0033a0) sections
+ * Source: Ceros experience at johnson-matthey.ceros.site/indaba-landing-page
+ * Extracted values: heading 55px/500wt/1.2lh, paragraph 300wt/1.4lh, gap ~32px
+ */
+
+.columns-content > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-content > div > div {
+  order: 1;
+}
+
+.columns-content > div > .columns-content-img-col {
+  order: 0;
+  line-height: 0;
+}
+
+/* Text column */
+.columns-content > div > div:not(.columns-content-img-col) {
+  padding: 32px 0;
+}
+
+.columns-content > div > div:not(.columns-content-img-col) h2 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.columns-content > div > div:not(.columns-content-img-col) p {
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+/* Image column */
+.columns-content > div > .columns-content-img-col picture {
+  display: block;
+}
+
+.columns-content > div > .columns-content-img-col img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (width >= 900px) {
+  .columns-content > div {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 32px;
+  }
+
+  .columns-content > div > div {
+    flex: 1;
+    order: unset;
+  }
+
+  /* Text column - vertically centered */
+  .columns-content > div > div:not(.columns-content-img-col) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 48px 0;
+  }
+
+  /* Image column fills height */
+  .columns-content > div > .columns-content-img-col {
+    min-height: 400px;
+    position: relative;
+  }
+
+  .columns-content > div > .columns-content-img-col picture {
+    position: absolute;
+    inset: 0;
+  }
+
+  .columns-content > div > .columns-content-img-col img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

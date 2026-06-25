@@ -1,19 +1,16 @@
 {
   "status": "success",
-  "url": "https://www.nottingham.ac.uk/",
+  "url": "https://hajj.nusuk.sa",
   "path": "index",
-  "timestamp": "2026-05-19T10:21:14.502Z",
-  "title": "University of Nottingham",
-  "template": "homepage",
+  "timestamp": "2026-06-24T10:52:00.786Z",
+  "title": "Nusuk Hajj Platform",
+  "template": "hajj-homepage",
   "blocks": [
-    "hero-homepage",
-    "search-course",
-    "cards-promo",
-    "cards-stats",
-    "columns-feature",
-    "cards-image-cta",
-    "carousel-news",
-    "cards-event",
-    "columns-logos"
+    "hero-video",
+    "columns-banner",
+    "tabs-services",
+    "carousel-video",
+    "cards-steps",
+    "accordion-faq"
   ]
 }

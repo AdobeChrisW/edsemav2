@@ -1,0 +1,43 @@
+/* Extracted from Ceros interactive experience at johnson-matthey.ceros.site/indaba-landing-page */
+/* Sections: "Section 4 - PGMs", "Section 5 - The PGM opportunity", "Section 6 - Leading innovation" */
+
+/* Heading styles (measured from CML elements) */
+/* font-family: "JM Sans Extended Medium" */
+/* font-size: 55px */
+/* font-weight: 500 */
+/* color: white (color(srgb 1 1 1)) - on dark/colored sections */
+/* line-height: 66px (1.2) */
+
+/* Paragraph styles (from CML text-style definitions) */
+/* font-family: "JMSans Light" */
+/* font-weight: 300 */
+/* line-height: 140% */
+/* letter-spacing: 0 */
+/* color: white on dark/colored backgrounds */
+
+/* Button text style (from CML defs) */
+/* font-family: "JMSans Light" */
+/* font-size: 1.5625em (25px) */
+/* font-weight: 300 */
+/* text-transform: uppercase */
+
+/* Section backgrounds */
+/* Section 4 (PGMs dependence): white background, but text is white - implies image fills bg */
+/* Section 5 (PGM opportunity): dark - #1d243c */
+/* Section 6 (Leading innovation): blue - #0033a0 */
+
+/* Layout */
+/* 2-column layout, 50/50 split */
+/* Section designed at 1800px width, full-width sections */
+/* Column gap: approximately 32px */
+/* Sections have 0px padding (content goes edge to edge in Ceros) */
+/* Section heights: 920px (S4), 1080px (S5), 1080px (S6) */
+/* Content is vertically centered within columns */
+
+/* Image column */
+/* Images fill their column with cover behavior */
+/* No border-radius on images */
+
+/* Text column */
+/* Text is vertically centered */
+/* Padding within text area for breathing room */

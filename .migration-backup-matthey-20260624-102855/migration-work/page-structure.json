@@ -1,0 +1,104 @@
+{
+  "url": "https://matthey.com/future-pgms-partnership",
+  "documentPath": "/future-pgms-partnership",
+  "analysisDate": "2026-05-21",
+  "notes": "Page content is primarily delivered via a Ceros iframe embed (https://johnson-matthey.ceros.site/indaba-landing-page). The visual sections below represent the content that would need to be recreated as native AEM content. Only the 'Contact us for more' section exists as native HTML outside the iframe.",
+  "excludedElements": {
+    "header": "Site navigation with JM logo, search, contact icon, mega-menu",
+    "footer": "Dark background footer with quick access links, social icons, legal links"
+  },
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "visualStyle": "dark blue/purple gradient background",
+      "overview": "Hero banner with page title and embedded video",
+      "contentSequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Large heading 'Developing the future of platinum group metals' centered on a dark blue/purple gradient background, with a video player/embed below showing a YouTube video thumbnail with play button"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "visualStyle": "light/white background",
+      "overview": "Partnership introduction with logos and descriptive text",
+      "contentSequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "JM logo with 'The future is precious' tagline, followed by a row of three partner logos (Johnson Matthey, Sibanye-Stillwater, Valterra Platinum) displayed side-by-side"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Paragraph of text describing the partnership: 'Together, JM and Sibanye-Stillwater, a mining and metal processing company, are working to address market concerns surrounding...'"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "visualStyle": "light background with left-right layout",
+      "overview": "Educational content about PGM dependence with accompanying image",
+      "contentSequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Two-column layout: Left side has heading 'Our everyday dependence on PGMs' with supporting paragraph text about PGMs being essential to everyday items. Right side has a large industrial/metallic close-up image"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "visualStyle": "dark background with industrial imagery",
+      "overview": "PGM opportunity section with dark overlay",
+      "contentSequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Two-column layout: Left side has a dark industrial/textural image. Right side has heading 'The PGM opportunity' with paragraph text about supply opportunity, on a dark-tinted background with visible industrial imagery behind text"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "visualStyle": "blue/accent background strip",
+      "overview": "Leading Innovation callout with researcher image",
+      "contentSequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Two-column layout: Left side has a bold blue background with large heading 'Leading Innovation'. Right side shows an image of a researcher/scientist in a lab coat"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "visualStyle": "light/white background",
+      "overview": "Contact section with team contact card",
+      "contentSequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading 'Contact us for more' followed by a contact card with 'PGMS team' title and a 'SEND A MESSAGE' call-to-action button"
+        }
+      ]
+    }
+  ],
+  "blockInventory": {
+    "localBlocks": [
+      { "name": "cards", "path": "blocks/cards" },
+      { "name": "columns", "path": "blocks/columns" },
+      { "name": "footer", "path": "blocks/footer" },
+      { "name": "fragment", "path": "blocks/fragment" },
+      { "name": "header", "path": "blocks/header" },
+      { "name": "hero", "path": "blocks/hero" }
+    ],
+    "blockCollectionAvailable": [
+      { "name": "table", "purpose": "Organize tabular data into a grid of rows and columns" },
+      { "name": "columns", "purpose": "Present content side by side in multiple columns" },
+      { "name": "cards", "purpose": "Showcase distinct pieces of information in card-based layout" },
+      { "name": "video", "purpose": "Embed a stand-alone video with built-in player" },
+      { "name": "accordion", "purpose": "Organize content within collapsible sections" },
+      { "name": "hero", "purpose": "Prominent image, headline, and optional CTA at top of page" },
+      { "name": "carousel", "purpose": "Display multiple images/slides in rotating format" },
+      { "name": "tabs", "purpose": "Present multiple sections accessible by tab selection" },
+      { "name": "search", "purpose": "Let users search site content by keyword" },
+      { "name": "embed", "purpose": "Embed external content (video, social) directly into page" }
+    ]
+  }
+}

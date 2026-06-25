@@ -1,0 +1,44 @@
+/* Extracted from source: https://johnson-matthey.ceros.site/indaba-landing-page */
+/* Logo container computed styles (level 3 ancestor of logo images) */
+
+/* Container holding all 3 logos */
+.columns-logos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0); /* transparent on white page */
+  margin: 0px;
+  width: 677px; /* content width within 780px viewport */
+  height: 73px; /* content height excluding padding */
+}
+
+/* Individual logo images */
+.columns-logos-container img.jm-logo {
+  width: 159px;
+  height: 38px;
+}
+
+.columns-logos-container img.sibanye-logo {
+  width: 129px;
+  height: 52px;
+}
+
+.columns-logos-container img.valterra-logo {
+  width: 144px;
+  height: 44px;
+}
+
+/* Parent section (level 5 ancestor) */
+.columns-logos-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 780px;
+  height: 1022px;
+  background-color: rgba(0, 0, 0, 0); /* transparent / white */
+}

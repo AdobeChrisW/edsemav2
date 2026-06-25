@@ -1,0 +1,15 @@
+/* Block: embed-video -- CSS extracted from source computed styles */
+/* DO NOT replace these values with generic defaults. */
+/* Refine: replace values matching brand.css variables, add responsive rules, handle EDS gotchas. */
+
+.embed-video iframe {
+  width: 780px;
+  height: 4021.25px;
+  display: inline;
+}
+
+.embed-video {
+  color: rgb(33, 37, 41);
+  width: 780px;
+  display: block;
+}

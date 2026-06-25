@@ -1,61 +1,157 @@
+/* stylelint-disable no-descending-specificity */
+
+/* ===== Footer — Nusuk Hajj ===== */
 footer {
-  background-color: var(--text-color);
+  background-color: #074d31;
   color: #fff;
-  font-size: var(--body-font-size-s);
+  font-family: var(--body-font-family);
 }
 
-footer .footer > div {
-  margin: auto;
+footer .footer {
+  box-sizing: border-box;
   max-width: var(--content-max-width);
-  padding: 48px 24px 24px;
+  margin: 0 auto;
+  padding: 48px 24px 32px;
 }
 
-footer .footer h2 {
+/* ===== Columns layout ===== */
+footer .footer-columns .default-content-wrapper,
+footer .footer-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+/* a column may stack multiple blocks (e.g. social + accessibility) */
+footer .footer-block + .footer-block {
+  margin-top: 40px;
+}
+
+footer .footer-block h3 {
+  margin: 0 0 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(255 255 255 / 30%);
   color: #fff;
-  font-size: var(--heading-font-size-m);
-  margin-top: 0;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-footer .footer p {
-  margin: 4px 0;
-  opacity: 0.85;
+footer .footer-block ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-footer .footer a:any-link {
+footer .footer-block li {
+  padding: 6px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+footer .footer-block a:any-link {
   color: #fff;
   text-decoration: none;
-  opacity: 0.85;
+  font-size: 14px;
+  opacity: 0.9;
+  transition: opacity 0.2s;
 }
 
-footer .footer a:hover {
+footer .footer-block a:hover {
+  opacity: 1;
   text-decoration: underline;
+}
+
+/* ===== Icon button rows (social + accessibility) ===== */
+footer .footer-block:has(a img) ul {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+footer .footer-block:has(a img) li {
+  padding: 0;
+}
+
+footer .footer-block:has(a img) a:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(255 255 255 / 40%);
+  border-radius: 8px;
   opacity: 1;
 }
 
-footer .footer ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 24px;
+footer .footer-block:has(a img) a:hover {
+  border-color: #fff;
+  text-decoration: none;
 }
 
-footer .footer ul li {
-  padding: 4px 0;
+footer .footer-block img {
+  width: 20px;
+  height: 20px;
+
+  /* SVG icons use currentColor (dark); render white to match footer */
+  filter: brightness(0) invert(1);
 }
 
-footer .footer strong {
-  display: block;
-  margin: 24px 0 8px;
-  font-size: var(--body-font-size-m);
+/* ===== Legal / bottom bar ===== */
+footer .footer-legal {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 40px;
+  padding-top: 24px;
 }
 
-footer .footer hr {
-  border: none;
-  border-top: 1px solid rgb(255 255 255 / 20%);
-  margin: 24px 0;
+footer .footer-legal p {
+  margin: 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+footer .footer-legal p:first-child {
+  font-weight: 700;
+}
+
+footer .footer-legal p:has(img) {
+  margin-top: 16px;
+}
+
+footer .footer-legal img {
+  width: auto;
+  height: 48px;
+}
+
+/* ===== Tablet / desktop ===== */
+@media (width >= 600px) {
+  footer .footer-columns .default-content-wrapper,
+  footer .footer-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 48px 32px 24px;
+  footer .footer {
+    padding: 48px 32px 32px;
+  }
+
+  footer .footer-columns .default-content-wrapper,
+  footer .footer-columns {
+    grid-template-columns: 1fr 1fr 1.4fr;
+    gap: 48px;
+  }
+
+  footer .footer-legal {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 64px;
+  }
+
+  footer .footer-legal p:has(img) {
+    margin-top: 0;
+    margin-left: auto;
   }
 }

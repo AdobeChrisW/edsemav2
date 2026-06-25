@@ -1,19 +1,26 @@
 :root {
-  --heading-font-family: "Lora", georgia, serif;
-  --body-font-family: "Circular", arial, sans-serif;
+  --heading-font-family: "IBM Plex Sans Arabic", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, sans-serif;
+  --body-font-family: "IBM Plex Sans Arabic", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, sans-serif;
   --background-color: #fff;
-  --text-color: #10263b;
-  --link-color: #0d6efd;
-  --link-hover-color: #0a58ca;
-  --light-color: #f4f4f4;
-  --dark-color: #1a1c28;
-  --section-padding: 48px;
+  --text-color: #161616;
+  --link-color: #1b8354;
+  --link-hover-color: #14573a;
+
+  /* brand palette */
+  --brand-primary: #1b8354;
+  --brand-primary-dark: #14573a;
+  --light-color: #f9fafb;
+  --dark-color: #182230;
+  --border-color: #d2d6db;
+  --slate-color: #384250;
+  --banner-gradient: linear-gradient(63deg, #182230 16.72%, #475467 83.39%);
+  --section-padding: 64px;
   --nav-height: 72px;
-  --content-max-width: 1200px;
-  --heading-size-xxl: 34px;
-  --heading-size-xl: 28px;
-  --heading-size-l: 28px;
-  --heading-size-m: 20px;
-  --heading-size-s: 18px;
-  --heading-size-xs: 16px;
+  --content-max-width: 1320px;
+  --heading-size-xxl: 60px;
+  --heading-size-xl: 32px;
+  --heading-size-l: 30px;
+  --heading-size-m: 24px;
+  --heading-size-s: 20px;
+  --heading-size-xs: 18px;
 }

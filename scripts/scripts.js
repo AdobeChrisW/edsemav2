@@ -114,10 +114,20 @@ function decorateButtons(main) {
 }
 
 /**
+ * No-op instrumentation mover. In Universal Editor (xwalk) projects this copies
+ * data-aue-* / data-richtext-* attributes between source and target elements so
+ * blocks stay editable after DOM transformation. This is a Document Authoring
+ * project, so there is no instrumentation to move and this is intentionally inert.
+ * Kept so blocks ported from the Block Collection import it without erroring.
+ * @param {Element} from source element
+ * @param {Element} to target element
+ */
+export function moveInstrumentation() {}
+
+/**
  * Decorates the main element.
  * @param {Element} main The main element
  */
-// eslint-disable-next-line import/prefer-default-export
 export function decorateMain(main) {
   decorateIcons(main);
   buildAutoBlocks(main);

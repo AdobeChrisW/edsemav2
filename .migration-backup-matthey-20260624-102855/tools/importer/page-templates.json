@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "content-page",
+      "urls": ["https://matthey.com/future-pgms-partnership"],
+      "description": "Johnson Matthey content page about future PGMs partnership",
+      "blocks": [
+        {
+          "name": "hero-pgm",
+          "instances": ["iframe[src*='ceros']"]
+        },
+        {
+          "name": "embed-video",
+          "instances": ["iframe[src*='ceros']"]
+        },
+        {
+          "name": "columns-logos",
+          "instances": ["iframe[src*='ceros']"]
+        },
+        {
+          "name": "columns-content",
+          "instances": ["iframe[src*='ceros']"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero",
+          "name": "Hero and Video Section",
+          "selector": ".component-html",
+          "style": null,
+          "blocks": ["hero-pgm", "embed-video"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-logos",
+          "name": "Partner Logos Section",
+          "selector": ".component-html",
+          "style": null,
+          "blocks": ["columns-logos"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3-dependence",
+          "name": "PGM Dependence Section",
+          "selector": ".component-html",
+          "style": null,
+          "blocks": ["columns-content"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4-opportunity",
+          "name": "PGM Opportunity Section",
+          "selector": ".component-html",
+          "style": "dark",
+          "blocks": ["columns-content"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5-innovation",
+          "name": "Leading Innovation Section",
+          "selector": ".component-html",
+          "style": "blue",
+          "blocks": ["columns-content"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6-contact",
+          "name": "Contact Section",
+          "selector": ".jmtwo--person-temp",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [".person-heading_align", ".person_card-title", ".btn__person"]
+        }
+      ]
+    }
+  ]
+}

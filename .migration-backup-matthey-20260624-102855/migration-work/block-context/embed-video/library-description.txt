@@ -1,0 +1,1 @@
+Base block type: embed. Variant: embed-video.

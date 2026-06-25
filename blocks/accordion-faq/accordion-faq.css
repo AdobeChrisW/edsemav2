@@ -1,0 +1,122 @@
+/*
+ * Accordion FAQ Block (flush style)
+ * Migrated from hajj.nusuk.sa #accordionFaq
+ * Flush accordion: no card border/background, thin grey dividers between items,
+ * semibold dark questions, right-aligned chevron that rotates on open,
+ * padded answer body.
+ */
+
+.accordion-faq {
+  margin-top: 32px;
+}
+
+/* FAQ section header: heading on the left, "View all FAQs" outline button on the right */
+.accordion-faq-container .default-content-wrapper:has(+ .accordion-faq-wrapper),
+.accordion-faq-container .default-content-wrapper:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.accordion-faq-container .default-content-wrapper :is(h2, h3) {
+  margin: 0;
+}
+
+.accordion-faq-container .default-content-wrapper p {
+  margin: 0;
+}
+
+.accordion-faq-container .default-content-wrapper p > a:any-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 18px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.accordion-faq-container .default-content-wrapper p > a:hover {
+  background-color: var(--light-color);
+  border-color: var(--text-color);
+  text-decoration: none;
+}
+
+/* each accordion item: thin grey divider between items */
+.accordion-faq .accordion-faq-item {
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+/* question row (summary) */
+.accordion-faq .accordion-faq-item-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  cursor: pointer;
+  list-style: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.accordion-faq .accordion-faq-item-label::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-faq .accordion-faq-item-label:hover,
+.accordion-faq .accordion-faq-item-label:focus {
+  background-color: var(--light-color);
+}
+
+.accordion-faq .accordion-faq-item[open] .accordion-faq-item-label {
+  background-color: #f3f4f6;
+}
+
+/* chevron indicator pushed to the right */
+.accordion-faq .accordion-faq-item-label::after {
+  content: "";
+  flex-shrink: 0;
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23161616' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-faq .accordion-faq-item[open] .accordion-faq-item-label::after {
+  transform: rotate(180deg);
+}
+
+/* answer body */
+.accordion-faq .accordion-faq-item-body {
+  padding: 8px 20px 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.accordion-faq .accordion-faq-item-body p {
+  margin-top: 0;
+  margin-bottom: 0.8em;
+}
+
+.accordion-faq .accordion-faq-item-body p:last-child {
+  margin-bottom: 0;
+}

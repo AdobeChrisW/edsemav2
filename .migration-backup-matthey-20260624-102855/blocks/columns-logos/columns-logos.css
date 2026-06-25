@@ -1,0 +1,53 @@
+/* columns-logos block
+ * Displays partner logos in a horizontal row, centered, with generous spacing.
+ * Source: https://johnson-matthey.ceros.site/indaba-landing-page
+ * Extracted values: gap 80px, padding 60px, logo heights 38-52px, centered flex row
+ */
+
+.columns-logos > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 24px;
+}
+
+.columns-logos > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columns-logos picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.columns-logos img {
+  display: block;
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+}
+
+.columns-logos p {
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .columns-logos > div {
+    flex-direction: row;
+    gap: 80px;
+    padding: 60px;
+  }
+
+  .columns-logos > div > div {
+    flex: 0 1 auto;
+  }
+
+  .columns-logos img {
+    max-height: 52px;
+  }
+}

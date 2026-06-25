@@ -1,0 +1,156 @@
+{
+  "url": "https://matthey.com/future-pgms-partnership",
+  "documentPath": "/future-pgms-partnership",
+  "analysisDate": "2026-05-21",
+  "notes": "Page content is primarily delivered via a Ceros iframe embed. For migration, the visual content sections within the Ceros experience are decomposed into native AEM EDS blocks and default content. The only native HTML section outside the iframe is the 'Contact us for more' section.",
+  "variantMapping": {
+    "hero": "hero-pgm",
+    "embed": "embed-video",
+    "columns-logos": "columns-logos",
+    "columns-content": "columns-content"
+  },
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "visualStyle": "dark blue/purple gradient background",
+      "sectionMetadata": null,
+      "sectionMetadataReason": "SKIP - Background is the hero block's own design (full-width gradient, edge-to-edge, no section padding visible). Hero blocks typically have intrinsic backgrounds.",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Large heading 'Developing the future of platinum group metals' on dark gradient background",
+          "decision": "BLOCK",
+          "blockName": "hero-pgm",
+          "blockVariant": "hero-pgm",
+          "reason": "Full-width banner with prominent heading on dark gradient background requires hero block structure. Author cannot replicate this layout with plain typing."
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Embedded YouTube video with play button thumbnail",
+          "decision": "BLOCK",
+          "blockName": "embed-video",
+          "blockVariant": "embed-video",
+          "reason": "YouTube video embed requires the embed block to properly display the video player. Matches 'Embed (video)' variant with poster image + URL."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "visualStyle": "light/white background",
+      "sectionMetadata": null,
+      "sectionMetadataReason": "SKIP - Default white/light background is the page default, no special section styling needed.",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Row of three partner logos displayed side-by-side: Johnson Matthey logo, Sibanye-Stillwater logo, and Valterra Platinum logo",
+          "decision": "BLOCK",
+          "blockName": "columns-logos",
+          "blockVariant": "columns-logos",
+          "reason": "Three logos displayed side-by-side require columns block for the horizontal layout. Author cannot create side-by-side arrangement by just typing."
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Paragraph describing the partnership between JM, Sibanye-Stillwater, and Valterra for PGM supply",
+          "decision": "DEFAULT CONTENT",
+          "blockName": null,
+          "reason": "Simple paragraph text that an author can type directly. No structural requirements."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "visualStyle": "light background with left-right layout",
+      "sectionMetadata": null,
+      "sectionMetadataReason": "SKIP - Light/white background is page default; no section styling needed.",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Two-column layout: Left has heading 'Our everyday dependence on PGMs' with paragraph text; Right has large industrial metallic close-up image",
+          "decision": "BLOCK",
+          "blockName": "columns-content",
+          "blockVariant": "columns-content",
+          "reason": "Side-by-side layout of text content and image requires columns block. 2-column structure with text in first column, image in second."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "visualStyle": "dark background with industrial imagery",
+      "sectionMetadata": {
+        "style": "dark"
+      },
+      "sectionMetadataReason": "KEEP - Solid dark background provides container styling for the columns block. Columns don't have intrinsic dark backgrounds. Visible padding around content confirms section-level styling.",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Two-column layout: Left has dark industrial/textural image; Right has heading 'The PGM opportunity' with paragraph text on dark background",
+          "decision": "BLOCK",
+          "blockName": "columns-content",
+          "blockVariant": "columns-content",
+          "reason": "Side-by-side layout with image on left and text content on right requires columns block. 2-column structure."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "visualStyle": "blue accent background",
+      "sectionMetadata": {
+        "style": "blue"
+      },
+      "sectionMetadataReason": "KEEP - Solid blue accent background provides container styling for columns block. Columns don't have intrinsic colored backgrounds. Visible padding confirms section-level styling.",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Two-column layout: Left has large bold heading 'Leading Innovation' on blue background; Right shows image of researcher/scientist in lab coat",
+          "decision": "BLOCK",
+          "blockName": "columns-content",
+          "blockVariant": "columns-content",
+          "reason": "Side-by-side layout of heading text and image requires columns block. 2-column structure with text heading in first column, image in second."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "visualStyle": "light/white background",
+      "sectionMetadata": null,
+      "sectionMetadataReason": "SKIP - Default white background, no special section styling needed.",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading 'Contact us for more' followed by team name 'PGMS team' and a 'SEND A MESSAGE' call-to-action button",
+          "decision": "DEFAULT CONTENT",
+          "blockName": null,
+          "reason": "Simple heading with descriptive text and a link/button. Author can type heading, team name text, and a link styled as button. Single item does not justify a cards block."
+        }
+      ]
+    }
+  ],
+  "blockStructures": {
+    "hero-pgm": {
+      "structure": "1 column, 3 rows. Row 1: block name. Row 2: background image (optional). Row 3: title (heading) + optional subheading + optional CTA.",
+      "exampleUrl": "https://main--sta-boilerplate--aemdemos.aem.page/block-collection/hero"
+    },
+    "embed-video": {
+      "structure": "1 column, 2 rows. Row 1: block name. Row 2: optional poster image + URL to external video.",
+      "exampleUrl": "https://main--sta-boilerplate--aemdemos.aem.page/block-collection/embed"
+    },
+    "columns-logos": {
+      "structure": "3 columns per row. Row 1: block name. Row 2: each cell contains a logo/image. Used for partner/brand logo displays.",
+      "exampleUrl": "https://main--sta-boilerplate--aemdemos.aem.page/block-collection/columns"
+    },
+    "columns-content": {
+      "structure": "2 columns per row. Row 1: block name. Row 2: text content in one cell, image in other cell. Used for text+image side-by-side layouts.",
+      "exampleUrl": "https://main--sta-boilerplate--aemdemos.aem.page/block-collection/columns"
+    }
+  },
+  "blocksUsed": ["hero-pgm", "embed-video", "columns-logos", "columns-content"],
+  "summary": {
+    "totalSections": 6,
+    "totalSequences": 7,
+    "defaultContentSequences": 2,
+    "blockSequences": 5,
+    "uniqueBlocksUsed": 4,
+    "newVariantsCreated": ["hero-pgm", "embed-video", "columns-logos", "columns-content"],
+    "existingVariantsReused": []
+  }
+}

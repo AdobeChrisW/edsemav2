@@ -1,0 +1,37 @@
+{
+  "variantName": "hero-video",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-24T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://hajj.nusuk.sa",
+    "originPage": "Nusuk Hajj homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "background video + heading + subheading + paragraph + 2 CTAs",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "page-top hero banners with a looping background video",
+      "landing pages needing a high-impact intro with CTAs"
+    ],
+    "notSuitableFor": [
+      "simple text intros without media",
+      "mid-page banners"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-24T00:00:00.000Z"
+  }
+}

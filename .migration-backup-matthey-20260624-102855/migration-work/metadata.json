@@ -1,0 +1,59 @@
+{
+  "url": "https://matthey.com/future-pgms-partnership",
+  "timestamp": "2026-05-21T14:28:58.223Z",
+  "paths": {
+    "documentPath": "/future-pgms-partnership",
+    "htmlFilePath": "/future-pgms-partnership.plain.html",
+    "mdFilePath": "/future-pgms-partnership.md",
+    "dirPath": "",
+    "filename": "future-pgms-partnership"
+  },
+  "screenshot": "migration-work/screenshot.png",
+  "html": {
+    "filePath": "migration-work/cleaned.html",
+    "size": 246886
+  },
+  "metadata": {
+    "title": "Developing the future of platinum group metals | Johnson Matthey",
+    "viewport": "initial-scale=1.0, width=device-width",
+    "og:locale": "en_GB",
+    "og:locale:alternate": "en_GB",
+    "og:site_name": "matthey.com",
+    "og:title": "Developing the future of platinum group metals - matthey.com",
+    "og:type": "website",
+    "og:url": "https://matthey.com/future-pgms-partnership",
+    "data-analytics-readable-content": "false",
+    "canonical": "https://matthey.com/future-pgms-partnership"
+  },
+  "images": {
+    "count": 18,
+    "mapping": {
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/call_center_icon.svg": "./images/a71d8e109bcc351d039996be0371296f.png",
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/JM%20Logo__blue.svg": "./images/66a261ad53e0dd1b99646903be0e78ec.png",
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/social_icons-LinkedIN.png": "./images/f4a9a36fddbbfd0a844666d1fd077ec5.png",
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/Instagram_icon.png": "./images/361ed01f800e703c2da9df38670a9c81.png",
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/Johnson_Matthey%20_Logo_blue.svg": "./images/50c5b7d26c5666a2afe7ee914656f3b7.png",
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/search_icon.svg": "./images/138bf07ded8441bce3f531a1dae69037.png",
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/arrow_forward-white.svg": "./images/5c13fbc4a774312ddc2a3f00049b0013.png",
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/JM_logo_white.png": "./images/3004f153c9a0e55a2c8ccdfd758d93cf.png",
+      "https://matthey.com/documents/161599/0/Youtube%20Icon.png": "./images/923a444845c14ecfaa42c7f0fe260c17.png",
+      "https://media.cdn.ceros.site/johnson-matthey/images/2025/11/13/0402af359a8ed2eaf4232f99947e9b67/processed-svg-down-icon.svg?imageOpt=1&width=1024": "./images/9dae33c13e1d9080098ef0ffd645e3b0.png",
+      "https://media.cdn.ceros.site/johnson-matthey/images/2025/11/13/1fd21e794e43ff940dee6426c09d1c63/processed-svg-arrow-icon.svg?imageOpt=1&width=1024": "./images/95a5c2262b6a084fbcfa8ef4759e8b9d.png",
+      "https://media.cdn.ceros.site/johnson-matthey/images/2026/02/02/a76b7ef919e5d433dfb469a36a2d9633/JM_Full2_RGB_SVG_blue.svg?imageOpt=1&width=1024": "./images/2cf9d765e4e88f14ea5991792fd4f123.png",
+      "https://media.cdn.ceros.site/johnson-matthey/images/2026/02/02/3f37a636088924641c4f9fb37f5043c6/Valterra_Platinum_Official_Logo__2025.svg?imageOpt=1&width=1024": "./images/8a72ba9cbcd22f5de256593835a18d21.png",
+      "https://i.ytimg.com/vi_webp/vnjUaXJzgAc/maxresdefault.webp": "./images/0fb01e33c365208e713bed6a83026edb.png",
+      "https://yt3.ggpht.com/ytc/AIdro_lDnRpmJkReJkOT5eB_EyBLdoOhoz7LFDc8-ir-hyVc9Qc=s68-c-k-c0x00ffffff-no-rj": "./images/814786fa3c7494b7ac1fcfb070b4c630.jpg",
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/menu-icon.svg": "./images/1109d9b682fe31bca1666031ceba9965.png",
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/keyboard_arrow_down.svg": "./images/f6e199736a73c406b756f266d81c2ea7.png",
+      "https://matthey.com/o/jm-platinum-theme/images/new__jm__images/keyboard_arrow_right-white.svg": "./images/dc8e21b448400ec315ff259b314bb6d2.png"
+    },
+    "stats": {
+      "total": 27,
+      "converted": 13,
+      "skipped": 5,
+      "failed": 9,
+      "tooLarge": 0,
+      "limitReached": 0
+    }
+  }
+}

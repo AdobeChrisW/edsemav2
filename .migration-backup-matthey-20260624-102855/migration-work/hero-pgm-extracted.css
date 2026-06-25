@@ -1,0 +1,20 @@
+/* Block: hero-pgm -- CSS extracted from source visual inspection */
+/* Source: Ceros iframe at https://matthey.com/future-pgms-partnership */
+/* NOTE: Cross-origin iframe prevented getComputedStyle extraction */
+/* Values derived from screenshot visual analysis */
+
+.hero-pgm {
+  background-color: rgb(29, 36, 60); /* #1d243c - dark navy */
+  color: rgb(255, 255, 255);
+  min-height: 500px;
+  text-align: center;
+  padding: 0;
+}
+
+.hero-pgm h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}

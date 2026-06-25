@@ -1,0 +1,171 @@
+/* Block: hero-video -- full-bleed background video hero with dark overlay */
+
+.hero-video-container .hero-video-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  min-height: 420px;
+  padding: 40px 24px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Dark green overlay over the video */
+.hero-video::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgb(9 42 30);
+  opacity: 0.8;
+}
+
+/* Background video / poster row sits behind everything */
+.hero-video > div:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  margin: 0;
+}
+
+.hero-video .hero-video-media {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-video .hero-video-bg,
+.hero-video picture,
+.hero-video picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Fallback poster image (when JS hasn't replaced link with video) */
+.hero-video picture {
+  position: absolute;
+  inset: 0;
+}
+
+/* Content row (heading + copy + CTAs) */
+.hero-video > div:last-child {
+  margin: 0;
+  width: 100%;
+}
+
+.hero-video > div:last-child > div {
+  width: 100%;
+}
+
+.hero-video h1,
+.hero-video h2,
+.hero-video h3,
+.hero-video p {
+  color: #fff;
+  max-width: 100%;
+}
+
+.hero-video h1 {
+  margin: 0 0 8px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.hero-video h2 {
+  margin: 0 0 8px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.22;
+}
+
+.hero-video p {
+  margin: 0 0 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* CTA paragraphs */
+.hero-video p:has(> a) {
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+
+/* CTA buttons -- override the global button reset */
+.hero-video p > a:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* First CTA -- solid green primary (first link paragraph) */
+.hero-video p:has(> a) > a:any-link {
+  border: 1px solid var(--brand-primary);
+  background-color: var(--brand-primary);
+  color: #fff;
+}
+
+.hero-video p:has(> a) > a:hover,
+.hero-video p:has(> a) > a:focus-visible {
+  border-color: var(--brand-primary-dark);
+  background-color: var(--brand-primary-dark);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Second CTA -- light/neutral on color (every link paragraph after the first) */
+.hero-video p:has(> a) ~ p:has(> a) > a:any-link {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+.hero-video p:has(> a) ~ p:has(> a) > a:hover,
+.hero-video p:has(> a) ~ p:has(> a) > a:focus-visible {
+  border-color: #fff;
+  background-color: rgb(255 255 255 / 85%);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .hero-video {
+    min-height: 550px;
+    padding: 40px calc((100% - var(--content-max-width)) / 2 + 32px);
+  }
+
+  .hero-video > div:last-child > div {
+    max-width: 648px;
+  }
+
+  .hero-video h1 {
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -1.2px;
+  }
+
+  .hero-video h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
