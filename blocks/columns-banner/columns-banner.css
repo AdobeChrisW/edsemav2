@@ -98,3 +98,59 @@
     line-height: 38px;
   }
 }
+
+/* ===== White CTA-card variant (e.g. "Start your journey now!") =====
+   Reuses columns-banner structure but renders as a white bordered card with a
+   green pilgrim icon and a solid-green button — not the dark gradient promo. */
+.columns-banner.columns-banner-cta {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  background-image: none;
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+.columns-banner.columns-banner-cta::before {
+  content: none;
+}
+
+/* circular light-green icon badge */
+.columns-banner.columns-banner-cta .columns-banner-cta-icon {
+  box-sizing: border-box;
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 8px;
+  padding: 13px;
+  border-radius: 9999px;
+  background-color: #f3fcf6;
+
+  /* tint the stroke SVG to brand green */
+  filter: invert(34%) sepia(64%) saturate(420%) hue-rotate(102deg) brightness(92%) contrast(90%);
+}
+
+.columns-banner.columns-banner-cta h4 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+}
+
+/* solid green button (overrides the on-color white button) */
+.columns-banner.columns-banner-cta a:any-link {
+  border: 1px solid var(--brand-primary);
+  background-color: var(--brand-primary);
+  color: #fff;
+}
+
+.columns-banner.columns-banner-cta a:any-link::after {
+  content: none;
+}
+
+.columns-banner.columns-banner-cta a:hover,
+.columns-banner.columns-banner-cta a:focus-visible {
+  background-color: var(--brand-primary-dark);
+  border-color: var(--brand-primary-dark);
+  color: #fff;
+}
