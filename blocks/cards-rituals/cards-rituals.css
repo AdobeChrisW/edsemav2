@@ -41,7 +41,7 @@
 }
 
 /* "Step NN" label */
-.cards-rituals .cards-rituals-step {
+.cards-rituals .cards-rituals-card-body .cards-rituals-step {
   display: flex;
   flex-direction: column;
   gap: 8px;
