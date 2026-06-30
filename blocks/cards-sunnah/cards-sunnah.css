@@ -1,0 +1,64 @@
+.cards-sunnah > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.cards-sunnah > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid #d2d6db;
+  border-radius: 16px;
+  background-color: var(--background-color);
+  padding: 16px;
+  text-align: start;
+}
+
+/* circular light-green icon badge */
+.cards-sunnah .cards-sunnah-card-icon {
+  line-height: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #f3fcf6;
+}
+
+.cards-sunnah .cards-sunnah-card-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+
+  /* tint the stroke SVG icons to the brand green */
+  filter: invert(34%) sepia(64%) saturate(420%) hue-rotate(102deg) brightness(92%) contrast(90%);
+}
+
+.cards-sunnah .cards-sunnah-card-body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+.cards-sunnah .cards-sunnah-card-body p {
+  margin: 0;
+}
+
+@media (width >= 600px) {
+  .cards-sunnah > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-sunnah > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

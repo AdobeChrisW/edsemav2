@@ -95,6 +95,376 @@
           ]
         }
       ]
+    },
+    {
+      "name": "legal-text",
+      "urls": [
+        "https://hajj.nusuk.sa/PrivacyPolicy",
+        "https://hajj.nusuk.sa/TermsOfUse"
+      ],
+      "representativeUrl": "https://hajj.nusuk.sa/TermsOfUse",
+      "coverageGaps": [],
+      "description": "Legal/text page: inner-page header (breadcrumb + title) followed by one long single-column section of headings, paragraphs and lists. Pure default content, no blocks.",
+      "blocks": [],
+      "sections": [
+        {
+          "id": "rc3",
+          "name": "Inner-page header (breadcrumb + title)",
+          "selector": "#dga-inner-page-header",
+          "style": "primary-50",
+          "blocks": [],
+          "defaultContent": ["#dga-inner-page-header"]
+        },
+        {
+          "id": "rc4",
+          "name": "Legal text body",
+          "selector": "#main-content > section.dga-bg-white",
+          "style": "white",
+          "blocks": [],
+          "defaultContent": ["#main-content > section.dga-bg-white"]
+        }
+      ]
+    },
+    {
+      "name": "listing-page",
+      "urls": [
+        "https://hajj.nusuk.sa/ServicedCountries",
+        "https://hajj.nusuk.sa/ServiceProviders"
+      ],
+      "representativeUrl": "https://hajj.nusuk.sa/ServiceProviders",
+      "coverageGaps": [
+        {
+          "url": "https://hajj.nusuk.sa/ServicedCountries",
+          "sections": [
+            { "sectionSignature": "6x1B", "nodeMapId": "rc5" }
+          ]
+        }
+      ],
+      "description": "Listing page: inner-page hero with title/search, then a grid of items (service-provider cards / country list).",
+      "blocks": [
+        {
+          "name": "hero-journey",
+          "instances": ["section.dga-service-providers-section"]
+        },
+        {
+          "name": "cards-listing",
+          "instances": ["#service-providers-grid"],
+          "section": "white"
+        }
+      ],
+      "sections": [
+        {
+          "id": "rc3",
+          "name": "Inner-page hero",
+          "selector": "section.dga-service-providers-section",
+          "style": null,
+          "blocks": ["hero-journey"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc4",
+          "name": "Service provider card grid",
+          "selector": "section.dga-py-5xl.dga-bg-white #service-providers-grid",
+          "style": "white",
+          "blocks": ["cards-listing"],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "packages-catalog",
+      "urls": [
+        "https://hajj.nusuk.sa/PackagesCategories"
+      ],
+      "representativeUrl": "https://hajj.nusuk.sa/PackagesCategories",
+      "coverageGaps": [],
+      "description": "Packages catalog: inner-page hero, tabbed sections, a categories carousel, and a tabbed zones section.",
+      "blocks": [
+        {
+          "name": "hero-journey",
+          "instances": ["main#main-content > section.dga-packages-section"]
+        },
+        {
+          "name": "tabs-services",
+          "instances": ["#nav-tabContent", "#nav-tabContent2"],
+          "section": "white"
+        },
+        {
+          "name": "carousel-video",
+          "instances": ["#preferred-card-carousel"],
+          "section": "white"
+        }
+      ],
+      "sections": [
+        {
+          "id": "s1",
+          "name": "Inner-page hero",
+          "selector": "main#main-content > section.dga-packages-section",
+          "style": null,
+          "blocks": ["hero-journey"],
+          "defaultContent": []
+        },
+        {
+          "id": "s2",
+          "name": "Categories and Packages Features (tabbed)",
+          "selector": "main#main-content > section.dga-py-8xl.dga-bg-white:nth-of-type(2)",
+          "style": "white",
+          "blocks": ["tabs-services"],
+          "defaultContent": ["main#main-content > section.dga-py-8xl.dga-bg-white:nth-of-type(2) h3"]
+        },
+        {
+          "id": "s3",
+          "name": "Categories Classifications (carousel)",
+          "selector": "main#main-content > section.dga-py-8xl.dga-bg-neutral-50:nth-of-type(3)",
+          "style": "white",
+          "blocks": ["carousel-video"],
+          "defaultContent": ["main#main-content > section.dga-py-8xl.dga-bg-neutral-50:nth-of-type(3) h3"]
+        },
+        {
+          "id": "s4",
+          "name": "Additional Factors that Differentiate Packages (tabbed + zone map)",
+          "selector": "main#main-content > section.dga-py-8xl.dga-bg-white:nth-of-type(4)",
+          "style": "white",
+          "blocks": ["tabs-services"],
+          "defaultContent": ["main#main-content > section.dga-py-8xl.dga-bg-white:nth-of-type(4) h3"]
+        }
+      ]
+    },
+    {
+      "name": "faq-support",
+      "urls": [
+        "https://hajj.nusuk.sa/FAQ"
+      ],
+      "representativeUrl": "https://hajj.nusuk.sa/FAQ",
+      "coverageGaps": [],
+      "description": "FAQ/support page: inner-page header + search, a tabbed accordion of Q&A, and a support-channels card grid.",
+      "blocks": [
+        {
+          "name": "tabs-services",
+          "instances": ["#nav-tab"],
+          "section": "white"
+        },
+        {
+          "name": "accordion-faq",
+          "instances": ["#accordionFaq"]
+        },
+        {
+          "name": "cards-support",
+          "instances": ["#support-channels .row"],
+          "section": "white"
+        }
+      ],
+      "sections": [
+        {
+          "id": "rc3",
+          "name": "Inner-page header",
+          "selector": "#dga-inner-page-header",
+          "style": "primary-50",
+          "blocks": [],
+          "defaultContent": ["#dga-inner-page-header"]
+        },
+        {
+          "id": "rc4",
+          "name": "FAQ category tabs + accordion",
+          "selector": "section.dga-pb-5xl",
+          "style": "white",
+          "blocks": ["tabs-services", "accordion-faq"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc5",
+          "name": "Support Contact Channels",
+          "selector": "#support-channels",
+          "style": "white",
+          "blocks": ["cards-support"],
+          "defaultContent": ["#support-channels > div > h1", "#support-channels > div > p"]
+        }
+      ]
+    },
+    {
+      "name": "journey-rituals",
+      "urls": [
+        "https://hajj.nusuk.sa/Journey"
+      ],
+      "representativeUrl": "https://hajj.nusuk.sa/Journey",
+      "coverageGaps": [],
+      "description": "The Journey page: inner-page hero, intro text, a numbered Hajj-rituals grid (image + step number + heading + text), a Sunnah-acts icon grid, and a CTA card.",
+      "blocks": [
+        {
+          "name": "hero-journey",
+          "instances": ["#main-content > section.dga-journey-section"]
+        },
+        {
+          "name": "cards-rituals",
+          "instances": ["#main-content section.dga-py-5xl.dga-bg-neutral-50 .d-flex.flex-column.dga-gap-4xl"]
+        },
+        {
+          "name": "cards-sunnah",
+          "instances": [".sonan-grid"]
+        },
+        {
+          "name": "columns-banner",
+          "instances": ["#main-content section.dga-py-5xl .dga-card-bordered"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "rc3",
+          "name": "Inner-page hero",
+          "selector": "#main-content > section.dga-journey-section",
+          "style": null,
+          "blocks": ["hero-journey"],
+          "defaultContent": []
+        },
+        {
+          "id": "rc4",
+          "name": "Intro text",
+          "selector": "#main-content > section.dga-py-5xl:nth-of-type(2)",
+          "style": "white",
+          "blocks": [],
+          "defaultContent": ["#main-content > section.dga-py-5xl:nth-of-type(2)"]
+        },
+        {
+          "id": "rc5",
+          "name": "Hajj Rituale + Sunnah + CTA",
+          "selector": "#main-content > section.dga-py-5xl.dga-bg-neutral-50",
+          "style": "light-grey",
+          "blocks": ["cards-rituals", "cards-sunnah", "columns-banner"],
+          "defaultContent": [
+            "#main-content > section.dga-py-5xl.dga-bg-neutral-50 #hajj-steps-title",
+            "#tawaf-sunan-title"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "guidelines-hub",
+      "urls": [
+        "https://hajj.nusuk.sa/nusuk/guidelines"
+      ],
+      "representativeUrl": "https://hajj.nusuk.sa/nusuk/guidelines",
+      "coverageGaps": [],
+      "description": "Guidelines hub: inner-page hero, intro text, and a 4-card 'learn more' grid linking to guideline articles.",
+      "blocks": [
+        {
+          "name": "hero-journey",
+          "instances": ["main#main-content > section.dga-guidelines-section"]
+        },
+        {
+          "name": "cards-guidelines",
+          "instances": [".guidelines-grid"],
+          "section": "grey"
+        }
+      ],
+      "sections": [
+        {
+          "id": "s1",
+          "name": "Inner-page hero",
+          "selector": "main#main-content > section.dga-guidelines-section",
+          "style": null,
+          "blocks": ["hero-journey"],
+          "defaultContent": []
+        },
+        {
+          "id": "s2",
+          "name": "Intro prose",
+          "selector": "main#main-content > section.dga-py-5xl.dga-bg-white",
+          "style": "white",
+          "blocks": [],
+          "defaultContent": ["main#main-content > section.dga-py-5xl.dga-bg-white"]
+        },
+        {
+          "id": "s3",
+          "name": "Prepare yourself - 4-card Learn More grid",
+          "selector": "main#main-content > section.dga-py-8xl.dga-bg-neutral-50",
+          "style": "grey",
+          "blocks": ["cards-guidelines"],
+          "defaultContent": ["main#main-content > section.dga-py-8xl.dga-bg-neutral-50 h1"]
+        }
+      ]
+    },
+    {
+      "name": "guidelines-article",
+      "urls": [
+        "https://hajj.nusuk.sa/nusuk/navigating",
+        "https://hajj.nusuk.sa/nusuk/about",
+        "https://hajj.nusuk.sa/nusuk/hajj-rituals",
+        "https://hajj.nusuk.sa/nusuk/health/guidelines"
+      ],
+      "representativeUrl": "https://hajj.nusuk.sa/nusuk/navigating",
+      "coverageGaps": [
+        {
+          "url": "https://hajj.nusuk.sa/nusuk/hajj-rituals",
+          "sections": [
+            { "sectionSignature": "sB(s,s,s,s,s,s,s,s,s,s,s)", "nodeMapId": "rc3" }
+          ]
+        }
+      ],
+      "description": "Guidelines article: inner-page hero (breadcrumb/title/intro, sometimes with a side contacts panel) followed by alternating white/grey content sections mixing prose, image+text splits, and icon grids.",
+      "blocks": [
+        {
+          "name": "columns-split",
+          "instances": [
+            "main#main-content > section.inner-page-section .row.dga-pt-5xl",
+            "main#main-content > section.dga-py-5xl.dga-bg-neutral-50:nth-of-type(2) .d-flex.justify-content-between"
+          ]
+        },
+        {
+          "name": "cards-sunnah",
+          "instances": ["main#main-content > section.dga-py-5xl.dga-bg-neutral-50:nth-of-type(6) .row.g-4"],
+          "section": "grey"
+        }
+      ],
+      "sections": [
+        {
+          "id": "s1",
+          "name": "Article header with side contacts panel",
+          "selector": "main#main-content > section.inner-page-section",
+          "style": "white",
+          "blocks": ["columns-split"],
+          "defaultContent": ["main#main-content > section.inner-page-section h1"]
+        },
+        {
+          "id": "s2",
+          "name": "Currency Exchange and Fund Transfers (image+text split)",
+          "selector": "main#main-content > section.dga-py-5xl.dga-bg-neutral-50:nth-of-type(2)",
+          "style": "grey",
+          "blocks": ["columns-split"],
+          "defaultContent": ["main#main-content > section.dga-py-5xl.dga-bg-neutral-50:nth-of-type(2) h5"]
+        },
+        {
+          "id": "s3",
+          "name": "General Information (prose + inline images)",
+          "selector": "main#main-content > section.dga-py-5xl.dga-bg-white:nth-of-type(3)",
+          "style": "white",
+          "blocks": [],
+          "defaultContent": ["main#main-content > section.dga-py-5xl.dga-bg-white:nth-of-type(3)"]
+        },
+        {
+          "id": "s4",
+          "name": "Airlines prose",
+          "selector": "main#main-content > section.dga-py-5xl.dga-bg-neutral-50:nth-of-type(4)",
+          "style": "grey",
+          "blocks": [],
+          "defaultContent": ["main#main-content > section.dga-py-5xl.dga-bg-neutral-50:nth-of-type(4)"]
+        },
+        {
+          "id": "s5",
+          "name": "Airports prose",
+          "selector": "main#main-content > section.dga-py-5xl.dga-bg-white:nth-of-type(5)",
+          "style": "white",
+          "blocks": [],
+          "defaultContent": ["main#main-content > section.dga-py-5xl.dga-bg-white:nth-of-type(5)"]
+        },
+        {
+          "id": "s6",
+          "name": "Transportation modes (icon grid)",
+          "selector": "main#main-content > section.dga-py-5xl.dga-bg-neutral-50:nth-of-type(6)",
+          "style": "grey",
+          "blocks": ["cards-sunnah"],
+          "defaultContent": ["main#main-content > section.dga-py-5xl.dga-bg-neutral-50:nth-of-type(6) h5"]
+        }
+      ]
     }
   ]
 }

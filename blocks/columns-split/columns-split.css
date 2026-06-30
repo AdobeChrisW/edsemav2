@@ -1,0 +1,79 @@
+/* columns-split: two-column prose + image/info-card split layout */
+
+.columns-split > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.columns-split > div > div {
+  flex: 1;
+}
+
+/* prose column: dark heading, grey body */
+.columns-split > div > div h1,
+.columns-split > div > div h2,
+.columns-split > div > div h3,
+.columns-split > div > div h4,
+.columns-split > div > div h5 {
+  color: var(--text-color);
+}
+
+.columns-split > div > div p {
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* image / info-card column */
+.columns-split > div > .columns-split-img-col {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  box-shadow:
+    0 2px 4px -2px rgb(16 24 40 / 10%),
+    0 4px 8px -2px rgb(16 24 40 / 6%);
+  padding: 16px;
+}
+
+/* rounded, clipped image inside the card */
+.columns-split .columns-split-img {
+  display: block;
+  margin: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.columns-split .columns-split-img picture,
+.columns-split .columns-split-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.columns-split > .columns-split-img-col p {
+  margin: 0;
+}
+
+.columns-split > div > .columns-split-img-col p:not(.columns-split-img) {
+  margin-top: 12px;
+}
+
+@media (width >= 900px) {
+  .columns-split > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  /* prose column wider (~2fr), card column narrower (~1fr) */
+  .columns-split > div > div {
+    flex: 2;
+  }
+
+  .columns-split > div > .columns-split-img-col {
+    flex: 1;
+    align-self: center;
+  }
+}

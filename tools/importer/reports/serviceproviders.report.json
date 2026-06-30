@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://hajj.nusuk.sa/ServiceProviders",
+  "path": "serviceproviders",
+  "timestamp": "2026-06-30T10:29:16.940Z",
+  "title": "Service Providers",
+  "template": "listing-page",
+  "blocks": [
+    "hero-journey",
+    "cards-listing"
+  ]
+}

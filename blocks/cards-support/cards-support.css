@@ -1,0 +1,114 @@
+.cards-support > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (width >= 600px) {
+  .cards-support > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-support > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.cards-support > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid var(--border-color, #d2d6db);
+  border-radius: 16px;
+  background-color: var(--background-color, #fff);
+  padding: 24px;
+}
+
+.cards-support .cards-support-card-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* circular light-green icon badge */
+.cards-support .cards-support-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  background-color: color-mix(in srgb, var(--brand-primary, #1b8354) 8%, #fff);
+}
+
+.cards-support .cards-support-card-icon img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+
+  /* tint stroke icons to brand green */
+  filter: brightness(0) saturate(100%) invert(38%) sepia(46%) saturate(737%)
+    hue-rotate(102deg) brightness(94%) contrast(91%);
+}
+
+.cards-support .cards-support-card-body h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-color, #161616);
+}
+
+.cards-support .cards-support-card-body p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color, #161616);
+}
+
+.cards-support .cards-support-card-body a:any-link {
+  color: var(--brand-primary, #1b8354);
+}
+
+/* the labels ("Service availability:", "Response time:") render as standalone
+   short paragraphs; emphasise them in brand green */
+.cards-support .cards-support-card-body p strong {
+  color: var(--brand-primary, #1b8354);
+}
+
+/* CTA button (standalone <p><a> promoted in JS) */
+.cards-support .cards-support-cta {
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.cards-support a.button:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: 1px solid var(--brand-primary, #1b8354);
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: var(--brand-primary, #1b8354);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.cards-support a.button:hover,
+.cards-support a.button:focus-visible {
+  background-color: var(--brand-primary-dark, #14573a);
+  border-color: var(--brand-primary-dark, #14573a);
+  color: #fff;
+  text-decoration: none;
+}

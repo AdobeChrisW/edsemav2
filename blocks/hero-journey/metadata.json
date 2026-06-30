@@ -1,0 +1,42 @@
+{
+  "variantName": "hero-journey",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-30T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://hajj.nusuk.sa/Journey",
+    "originPage": "The Journey (inner page)",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "inner-page-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "background image + heading + subtitle",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "inner/landing page headers with a static background image",
+      "title + subtitle intros over a photo"
+    ],
+    "notSuitableFor": [
+      "page-top heroes needing a looping background video (use hero-video)",
+      "heroes that require CTA buttons"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/journey",
+      "/serviceproviders",
+      "/packagescategories",
+      "/nusuk/guidelines"
+    ],
+    "reuseCount": 4,
+    "lastUsed": "2026-06-30T00:00:00.000Z"
+  }
+}

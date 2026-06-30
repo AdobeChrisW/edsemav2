@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-support",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-30T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://hajj.nusuk.sa/FAQ",
+    "originPage": "Help & Support / FAQ (faq-support template)",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "support-channels",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "N repeating bordered cards, each circular icon + title + description + optional availability/response lines + CTA button or social links",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "contact / support channel grids (icon + title + description + contact action)",
+      "icon-led informational cards that include a description and a CTA"
+    ],
+    "notSuitableFor": [
+      "logo + name listing grids (use cards-listing)",
+      "icon + short single-line text only (use cards-sunnah)",
+      "image-rich numbered step grids (use cards-rituals)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/faq"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-30T00:00:00.000Z"
+  }
+}

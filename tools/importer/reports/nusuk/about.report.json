@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://hajj.nusuk.sa/nusuk/about",
+  "path": "nusuk/about",
+  "timestamp": "2026-06-30T10:29:55.500Z",
+  "title": "Nusuk Hajj",
+  "template": "guidelines-article",
+  "blocks": [
+    "columns-split",
+    "columns-split"
+  ]
+}

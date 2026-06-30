@@ -1,0 +1,99 @@
+/* Block: cards-rituals -- ritual steps list (image + step label + heading + paragraph) */
+
+.cards-rituals > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* each ritual = a row: image stacked above text on mobile */
+.cards-rituals > ul > li {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.cards-rituals .cards-rituals-card-image {
+  line-height: 0;
+  flex: 0 0 auto;
+}
+
+.cards-rituals .cards-rituals-card-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 384 / 232;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* text column */
+.cards-rituals .cards-rituals-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* "Step NN" label */
+.cards-rituals .cards-rituals-step {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  color: var(--brand-primary);
+}
+
+.cards-rituals .cards-rituals-step-word {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.cards-rituals .cards-rituals-step-num {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.cards-rituals .cards-rituals-card-body h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.27;
+  color: var(--text-color);
+}
+
+.cards-rituals .cards-rituals-card-body p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+@media (width >= 900px) {
+  .cards-rituals > ul {
+    gap: 32px;
+  }
+
+  .cards-rituals > ul > li {
+    flex-direction: row;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .cards-rituals .cards-rituals-card-image {
+    flex: 0 0 384px;
+    max-width: 384px;
+  }
+
+  .cards-rituals .cards-rituals-card-body {
+    flex: 1 1 auto;
+    gap: 24px;
+  }
+}

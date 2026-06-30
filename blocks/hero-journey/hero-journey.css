@@ -1,0 +1,96 @@
+/* Block: hero-journey -- inner-page hero with full-bleed background photo + dark green overlay */
+
+.hero-journey-container .hero-journey-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-journey {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  min-height: 400px;
+  padding: 40px 24px;
+  overflow: hidden;
+  isolation: isolate;
+  background-image: url("https://hajj.nusuk.sa/assets/img/journey-section-bg.jpg");
+  background-position: 50% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Dark green overlay over the photo */
+.hero-journey::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgb(9 42 30);
+  opacity: 0.8;
+}
+
+/* When the content contains an authored background image, position it behind */
+.hero-journey picture {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  margin: 0;
+}
+
+.hero-journey picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content row (heading + subtitle) */
+.hero-journey > div {
+  margin: 0;
+  width: 100%;
+}
+
+.hero-journey > div > div {
+  width: 100%;
+}
+
+.hero-journey h1,
+.hero-journey h2,
+.hero-journey h3,
+.hero-journey p {
+  color: #fff;
+  max-width: 100%;
+}
+
+.hero-journey h1 {
+  margin: 0 0 20px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.hero-journey p {
+  margin: 0 0 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media (width >= 900px) {
+  .hero-journey {
+    min-height: 550px;
+    padding: 40px calc((100% - var(--content-max-width)) / 2 + 32px);
+  }
+
+  .hero-journey > div > div {
+    max-width: 648px;
+  }
+
+  .hero-journey h1 {
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -1.2px;
+  }
+}

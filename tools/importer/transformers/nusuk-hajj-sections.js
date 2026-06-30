@@ -46,12 +46,18 @@ export default function transform(hookName, element, payload) {
 
   if (!resolved.length) return;
 
+  // Styles that map to the default (white) background have no CSS rule, so
+  // emitting Section Metadata for them is a no-op that only risks producing
+  // orphan .section-metadata divs (which then get mis-loaded as a block).
+  // Skip them — only emit metadata for styles that actually change appearance.
+  const NOOP_STYLES = new Set(['white', 'default', 'none', '']);
+
   // Process in reverse so DOM insertions do not invalidate earlier matches.
   for (let i = resolved.length - 1; i >= 0; i -= 1) {
     const { section, el } = resolved[i];
 
-    // Section Metadata block after the section, when a style is defined.
-    if (section.style) {
+    // Section Metadata block after the section, when a meaningful style is defined.
+    if (section.style && !NOOP_STYLES.has(String(section.style).trim().toLowerCase())) {
       const metaBlock = WebImporter.Blocks.createBlock(doc, {
         name: 'Section Metadata',
         cells: { style: section.style },

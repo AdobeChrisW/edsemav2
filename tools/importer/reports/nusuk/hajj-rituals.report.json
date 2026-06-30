@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://hajj.nusuk.sa/nusuk/hajj-rituals",
+  "path": "nusuk/hajj-rituals",
+  "timestamp": "2026-06-30T10:30:01.273Z",
+  "title": "Hajj Rituals",
+  "template": "guidelines-article",
+  "blocks": [
+    "columns-split"
+  ]
+}

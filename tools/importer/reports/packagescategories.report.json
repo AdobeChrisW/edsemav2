@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://hajj.nusuk.sa/PackagesCategories",
+  "path": "packagescategories",
+  "timestamp": "2026-06-30T10:29:23.276Z",
+  "title": "Packages",
+  "template": "packages-catalog",
+  "blocks": [
+    "hero-journey",
+    "tabs-services",
+    "tabs-services",
+    "carousel-video"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-listing",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-30T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://hajj.nusuk.sa/ServiceProviders",
+    "originPage": "Service Providers (listing page)",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "directory-listing",
+    "imagePattern": "logo"
+  },
+  "contentPattern": {
+    "structure": "N repeating items, each logo image + company name heading + 'View Profile' CTA link",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "directory / listing grids of entities (providers, partners) with a logo, name and a single 'view'/'profile' CTA",
+      "JS/API-extensible card grids where each item is a logo + title + link"
+    ],
+    "notSuitableFor": [
+      "image-rich cards with long descriptions (use cards-rituals)",
+      "icon + short-text feature grids (use cards-sunnah)",
+      "numbered step icons (use cards-steps)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/serviceproviders"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-30T00:00:00.000Z"
+  }
+}

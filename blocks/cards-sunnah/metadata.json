@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-sunnah",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-30T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://hajj.nusuk.sa/Journey",
+    "originPage": "The Journey (inner page)",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "icon-feature-grid",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "N repeating items, each icon + short text line",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "icon + short-text feature/fact grids",
+      "bordered tip cards with a centered icon"
+    ],
+    "notSuitableFor": [
+      "image-rich cards with descriptions (use cards-rituals)",
+      "numbered step icons keyed by number (use cards-steps)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/journey",
+      "/nusuk/navigating"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-06-30T00:00:00.000Z"
+  }
+}

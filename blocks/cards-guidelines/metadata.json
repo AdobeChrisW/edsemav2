@@ -1,0 +1,38 @@
+{
+  "variantName": "cards-guidelines",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-30T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://hajj.nusuk.sa/nusuk/guidelines",
+    "originPage": "Hajj Guidelines hub (guidelines-hub template)",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "navigation-hub",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "N repeating bordered cards, each circular icon + title heading + single 'Learn More' CTA button (no description, no photo)",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "navigation / hub card grids linking to sub-pages (icon + title + single CTA button)",
+      "topic launchers where each card routes to an article"
+    ],
+    "notSuitableFor": [
+      "logo + name directory listings (use cards-listing)",
+      "icon + title + description + contact action (use cards-support)",
+      "icon + short single-line text with no CTA (use cards-sunnah)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/nusuk/guidelines"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-30T00:00:00.000Z"
+  }
+}

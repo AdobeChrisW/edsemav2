@@ -30,8 +30,11 @@
     ]
   },
   "usage": {
-    "pagesUsing": ["/index"],
-    "reuseCount": 1,
-    "lastUsed": "2026-06-24T00:00:00.000Z"
+    "pagesUsing": [
+      "/index",
+      "/packagescategories"
+    ],
+    "reuseCount": 2,
+    "lastUsed": "2026-06-30T00:00:00.000Z"
   }
 }

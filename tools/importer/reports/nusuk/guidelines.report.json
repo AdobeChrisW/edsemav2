@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://hajj.nusuk.sa/nusuk/guidelines",
+  "path": "nusuk/guidelines",
+  "timestamp": "2026-06-30T10:29:43.162Z",
+  "title": "Hajj Guidelines",
+  "template": "guidelines-hub",
+  "blocks": [
+    "hero-journey",
+    "cards-guidelines"
+  ]
+}

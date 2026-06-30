@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://hajj.nusuk.sa/nusuk/navigating",
+  "path": "nusuk/navigating",
+  "timestamp": "2026-06-30T10:29:49.545Z",
+  "title": "Navigating The Kingdom",
+  "template": "guidelines-article",
+  "blocks": [
+    "columns-split",
+    "columns-split",
+    "cards-sunnah"
+  ]
+}

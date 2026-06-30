@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://hajj.nusuk.sa/Journey",
+  "path": "journey",
+  "timestamp": "2026-06-30T10:29:36.469Z",
+  "title": "The Journey",
+  "template": "journey-rituals",
+  "blocks": [
+    "hero-journey",
+    "cards-rituals",
+    "cards-sunnah",
+    "columns-banner"
+  ]
+}

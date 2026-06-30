@@ -1,0 +1,37 @@
+{
+  "variantName": "cards-rituals",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-30T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://hajj.nusuk.sa/Journey",
+    "originPage": "The Journey (inner page)",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "numbered-rituals",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "N repeating items, each photo + Step label + two-digit number + heading + paragraph",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "image-rich numbered step/ritual grids with descriptions",
+      "process walkthroughs where each step has a photo and a number"
+    ],
+    "notSuitableFor": [
+      "icon-only step lists with no images (use cards-steps)",
+      "icon + text feature grids (use cards-sunnah)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/journey"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-30T00:00:00.000Z"
+  }
+}

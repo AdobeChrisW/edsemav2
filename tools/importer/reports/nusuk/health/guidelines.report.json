@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://hajj.nusuk.sa/nusuk/health/guidelines",
+  "path": "nusuk/health/guidelines",
+  "timestamp": "2026-06-30T10:30:05.991Z",
+  "title": "Health Guidelines",
+  "template": "guidelines-article",
+  "blocks": [
+    "columns-split",
+    "columns-split"
+  ]
+}

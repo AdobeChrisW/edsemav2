@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://hajj.nusuk.sa/FAQ",
+  "path": "faq",
+  "timestamp": "2026-06-30T10:29:29.552Z",
+  "title": "FAQ",
+  "template": "faq-support",
+  "blocks": [
+    "tabs-services",
+    "accordion-faq",
+    "cards-support"
+  ]
+}

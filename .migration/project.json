@@ -1,5 +1,8 @@
 {
   "type": "da",
+  "previewOrg": "adobechrisw",
+  "previewSite": "edsemav2",
+  "contentHostUrl": "https://content.da.live/adobechrisw/edsemav2/",
   "sites": {
     "edsemav2": {
       "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json",

@@ -1,0 +1,38 @@
+{
+  "variantName": "columns-split",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-06-30T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://hajj.nusuk.sa/nusuk/navigating",
+    "originPage": "Navigating The Kingdom (guidelines-article template)",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "content-split",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "two side-by-side columns of free content (prose | bordered info/contact card, or prose | image card)",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "plain two-column content splits (prose + side panel/card)",
+      "image+text splits within article body sections"
+    ],
+    "notSuitableFor": [
+      "accent promotional banners with a single CTA (use columns-banner)",
+      "repeating item grids (use a cards variant)",
+      "page-top heroes (use hero / hero-journey)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/nusuk/navigating"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-30T00:00:00.000Z"
+  }
+}

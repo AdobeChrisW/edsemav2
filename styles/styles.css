@@ -250,6 +250,12 @@ main .section.highlight {
   padding: var(--section-padding) 0;
 }
 
+/* faint brand tint used on inner-page headers (breadcrumb + title band) */
+main .section.primary-50 {
+  background-color: #f3fcf6;
+  padding: var(--section-padding) 0;
+}
+
 main .section.dark {
   background-color: var(--dark-color);
   color: #fff;

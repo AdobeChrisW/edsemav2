@@ -43,10 +43,17 @@ export default function transform(hookName, element, payload) {
     // The skip-links (a.sr-only.sr-only-focusable, cleaned.html:67-68) and the
     // #external-link-warning helper (cleaned.html:849) live inside header/footer
     // and are removed along with them; any stragglers handled below.
+    // Content pages (Journey, Guidelines, Listing, FAQ, etc.) add a
+    // "Was this page helpful?" feedback band and breadcrumb navs that are
+    // non-authorable chrome — strip them too. The breadcrumb <nav> lives inside
+    // each inner-page hero; remove only standalone breadcrumb navs, not the
+    // block content. The feedback band sits as a body-level div after <main>.
     WebImporter.DOMUtils.remove(element, [
       '.dga-digital-stamp',
       'header.dga-header',
       'footer.dga-py-6xl',
+      '.dga-feedback-section',
+      'nav[aria-label="Breadcrumb"]',
       'a.sr-only.sr-only-focusable',
       '#external-link-warning',
       'iframe',
