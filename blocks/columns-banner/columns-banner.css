@@ -1,5 +1,6 @@
 /* Block: columns-banner -- promotional banner with dark slate gradient.
-   Values extracted from source computed styles (.global-packages-banner). */
+   Values extracted from source computed styles (.global-packages-banner).
+   Includes the white CTA-card variant (.columns-banner-cta) for inner pages. */
 
 .columns-banner {
   position: relative;
